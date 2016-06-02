@@ -9,9 +9,18 @@ namespace Snake
     class Program
     {
         static void Main(string[] args)
-        { 
-            Console.WriteLine("Hsdsd");
+        {
+            Draw(1, 3, '*');
+
+            Draw(4, 3, '$');
+
             Console.ReadLine();
+
+        }
+        static void Draw(int x, int y, char sym)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.Write(sym);
         }
     }
 }
